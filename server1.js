@@ -4,7 +4,7 @@ const user = require('./model')
 const bcrypt = require('bcrypt')
 const app = express();
 app.use(express.json())
-mongoose.connect('mongodb+srv://nandinisirigiri140_db_user:NUfbGOxEI90DexrN@cluster0.3m7ja41.mongodb.net/').then(()=> console.log('connected to db..')).catch(err=> console.log(err))
+mongoose.connect('mongodb+srv://nandinisirigiri140_db_user:@cluster0.3m7ja41.mongodb.net/').then(()=> console.log('connected to db..')).catch(err=> console.log(err))
 app.post('/signup',async (req,res) =>{
     const {username} =req.body
     const {email} = req.body
